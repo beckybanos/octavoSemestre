@@ -1,10 +1,11 @@
-%Comentarios
+% % Comentarios
 % t = linspace(-5,5,100); y = (exp(0.3*t)).*(sin(2*pi*t));
 % 
 % plot(t,y) 
-% title ('FunciÃ³n exponencial compleja') 
+% title ('Función exponencial compleja') 
 % ylabel ('Amplitud')
-% xlabel ('Tiempo') grid on
+% xlabel ('Tiempo') 
+% grid on
 
 f = [1,pi/8,pi/4,pi/2,pi,3*pi/2,7*pi/4,15*pi/8,2*pi];
 subplot(3,3,1)
