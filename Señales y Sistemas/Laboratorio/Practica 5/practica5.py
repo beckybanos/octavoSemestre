@@ -71,15 +71,28 @@ plt.figure()
 plt.plot(x,sum)
 
 x = np.linspace(-2,2,200)
-sum = np.zeros(200)
+sum2 = np.zeros(200)
 aux = 1
-for val in range(0,1000):	
-	term = (8/(np.pi**2))*(1/(aux**2))*np.sin(aux*2*x[i]*np.pi)
+for val in range(0,50):
+    term = (1/(aux**2))*np.sin(aux*x*np.pi)
     aux = aux + 2
-    sum = sum + (-1**val)*term
+    sum2 = sum2 + ((-1)**val)*term
+sum2 = (8/(np.pi**2))*sum2
 
 plt.figure()
-plt.plot(x,sum)
+plt.plot(x,sum2)
+
+
+
+x = np.linspace(-2,2,200)
+sum3 = np.zeros(200)
+for val in range(1,50):
+    term = (1/val)*np.sin(val*x*np.pi)
+    sum3 = sum3 + ((-1)**(val+1))*term
+sum2 = (2/np.pi)*sum3
+
+plt.figure()
+plt.plot(x,sum3)
 
 
 
